@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwipeActivity" >
+    
+    <com.spacecaker.swipelock.ui.SwipeView
+        android:id="@+id/swipe_view"
+        android:layout_width="fill_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff000000"
+            android:id="@+id/page0">
+
+            <AnalogClock android:layout_gravity="center" android:id="@+id/calendarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        </LinearLayout>
+                
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff123132"
+            android:id="@+id/page1">
+
+            <AnalogClock android:layout_gravity="center" android:id="@+id/calendarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff35be5b"
+            android:id="@+id/page2">
+
+            <AnalogClock android:layout_gravity="center" android:id="@+id/calendarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        </LinearLayout>
+    </com.spacecaker.swipelock.ui.SwipeView>        
+</RelativeLayout>
